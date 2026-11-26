@@ -1,250 +1,115 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Asoherbs Fertility & Wellness Home — traditional herbal wisdom and modern wellness.">
-  <title>ASOHERBS | Fertility & Wellness Home</title>
-  <style>
-    :root {
-      --green: #008037;
-      --light-green: #689F38;
-      --cream: #FAFFF7;
-      --gold: #F6BC00;
-      --dark: #183323;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: var(--cream);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    header {
-      background: white;
-      padding: 18px 6%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 15px;
-      border-bottom: 1px solid #e6eee5;
-    }
-
-    .brand {
-      color: var(--green);
-      font-size: 25px;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-
-    .brand small {
-      display: block;
-      color: #667466;
-      font-size: 10px;
-      letter-spacing: 2px;
-    }
-
-    nav { display: flex; gap: 20px; flex-wrap: wrap; }
-
-    nav a {
-      color: var(--dark);
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    nav a:hover { color: var(--green); }
-
-    .hero {
-      padding: 90px 8%;
-      background: linear-gradient(120deg, #e8f3e5, #FAFFF7);
-      text-align: center;
-    }
-
-    .hero h1 {
-      color: var(--green);
-      font-size: clamp(34px, 6vw, 56px);
-      line-height: 1.15;
-      max-width: 850px;
-      margin: 0 auto 22px;
-    }
-
-    .hero p {
-      max-width: 650px;
-      margin: 0 auto 30px;
-      color: #536455;
-      font-size: 17px;
-    }
-
-    .button {
-      display: inline-block;
-      background: var(--green);
-      color: white;
-      padding: 14px 27px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
-    }
-
-    .button.secondary {
-      background: transparent;
-      border: 1px solid var(--green);
-      color: var(--green);
-    }
-
-    section { padding: 65px 7%; }
-
-    .section-title {
-      text-align: center;
-      color: var(--green);
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
-
-    .intro {
-      max-width: 750px;
-      text-align: center;
-      margin: 0 auto;
-      color: #647264;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
-      margin-top: 35px;
-    }
-
-    .feature {
-      background: white;
-      padding: 28px;
-      border-radius: 10px;
-      border: 1px solid #e6eee5;
-    }
-
-    .feature h3 {
-      color: var(--green);
-      margin-bottom: 10px;
-    }
-
-    .shop {
-      background: #edf5e9;
-      text-align: center;
-    }
-
-    .shop p {
-      max-width: 650px;
-      margin: 0 auto 22px;
-      color: #536455;
-    }
-
-    .contact { text-align: center; }
-
-    footer {
-      background: #123c27;
-      color: white;
-      text-align: center;
-      padding: 30px 6%;
-      font-size: 13px;
-    }
-
-    footer p { margin: 5px 0; }
-
-    @media (max-width: 600px) {
-      header { justify-content: center; text-align: center; }
-      nav { justify-content: center; gap: 13px; }
-      .hero { padding: 65px 6%; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Shop Asoherbs herbal wellness products. Fallosure Kit with free delivery within Nigeria.">
+<title>ASOHERBS | Fertility & Wellness Home</title>
+<style>
+:root{--green:#008037;--leaf:#689F38;--cream:#FAFFF7;--gold:#F6BC00;--ink:#183323;--muted:#66756a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
+a{color:inherit}.topline{background:var(--green);color:white;text-align:center;padding:8px 12px;font-size:13px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #e4eadf;padding:14px max(5%,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:900;color:var(--green);font-size:25px;letter-spacing:.5px;line-height:1.1}.logo small{display:block;font-size:9px;letter-spacing:1.2px;color:var(--muted);margin-top:5px}
+nav{display:flex;gap:22px;align-items:center}nav a{text-decoration:none;font-size:14px;font-weight:700}
+.cartbtn,.btn{border:0;border-radius:8px;background:var(--green);color:#fff;padding:13px 19px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.cartbtn{white-space:nowrap}.btn.gold{background:var(--gold);color:var(--ink)}
+.hero{background:linear-gradient(120deg,#edf6e9,#fff8e6);padding:70px 5%;text-align:center}.hero-inner{max-width:850px;margin:auto}
+.eyebrow{color:var(--leaf);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.08;color:var(--green);margin:13px 0 18px}
+.hero p{font-size:18px;max-width:680px;margin:0 auto 25px;color:#435448}
+.wrap{max-width:1160px;margin:auto;padding:58px 5%}.sectionhead{text-align:center;margin-bottom:32px}.sectionhead h2{font-size:clamp(27px,4vw,36px);color:var(--green);margin:0 0 8px}.sectionhead p{margin:0;color:var(--muted)}
+.product{display:grid;grid-template-columns:1.08fr .92fr;background:#fff;border:1px solid #e5ebdf;border-radius:18px;overflow:hidden;box-shadow:0 12px 35px #1833230d}
+.productphoto{background:#f4f7ee;display:flex;align-items:center;justify-content:center;padding:20px;min-height:390px}.productphoto img{display:block;width:100%;height:auto;max-height:540px;object-fit:contain;border-radius:8px}
+.details{padding:clamp(22px,4vw,42px)}.tag{display:inline-block;background:#edf6e9;color:var(--green);font-weight:800;font-size:11px;padding:6px 10px;border-radius:30px}
+.details h3{font-size:32px;color:var(--green);margin:12px 0 5px}.details p{color:#536257}.sellingpoints{padding-left:20px;margin:18px 0}.sellingpoints li{margin:7px 0}
+label{display:block;font-weight:700;font-size:14px;margin:16px 0 6px}select,input,textarea{width:100%;border:1px solid #cbd8c8;border-radius:8px;padding:13px;font:inherit;background:white;color:var(--ink)}
+.price{font-size:32px;font-weight:900;color:var(--green);margin:14px 0 0}.delivery{color:var(--green)!important;font-weight:800;margin:0 0 17px}.details .btn{width:100%;font-size:16px}
+.smallprint{font-size:12px;color:var(--muted)!important;margin-top:18px}
+.perks{background:#eef6eb}.perkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.perk{background:white;border-radius:12px;padding:23px;text-align:center}.perk h3{color:var(--green);margin:0 0 8px}.perk p{margin:0;color:var(--muted);font-size:14px}
+.reviews{max-width:790px;margin:auto;background:#fff;border:1px solid #e5ebdf;border-radius:16px;padding:clamp(20px,4vw,34px)}.reviewintro{text-align:center;color:var(--muted);margin:-18px 0 25px}.reviewitem{padding:15px 0;border-bottom:1px solid #edf0e9}.stars{color:#d49b00;letter-spacing:2px}.reviewitem strong{display:block}.reviewform{margin-top:25px}.reviewform .btn{margin-top:10px}.reviewstatus{font-size:13px;color:var(--muted);margin-top:10px}
+.contact{text-align:center;background:#eef6eb}.contact p{color:var(--muted)}
+footer{background:#123b25;color:white;text-align:center;padding:35px 5%}footer p{margin:6px 0;color:#e5f0e5;font-size:14px}
+.overlay{display:none;position:fixed;inset:0;background:#07170dcc;z-index:20;align-items:center;justify-content:center;padding:16px}.panel{background:white;border-radius:14px;width:min(100%,520px);max-height:90vh;overflow:auto;padding:25px}.panelhead{display:flex;justify-content:space-between;align-items:center;gap:12px}.panel h2{color:var(--green);margin:0}.xbtn{border:0;border-radius:7px;padding:8px 12px;cursor:pointer}.cartrow{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #e8eee5}.total{font-size:22px;font-weight:900;margin:18px 0}.empty{color:var(--muted);padding:20px 0}.checkout-note{font-size:12px;color:var(--muted)}
+@media(max-width:760px){header{flex-wrap:wrap;justify-content:center}nav{order:3;width:100%;justify-content:center;gap:15px;flex-wrap:wrap}nav a{font-size:13px}.product{grid-template-columns:1fr}.productphoto{min-height:250px}.perkgrid{grid-template-columns:1fr}.hero{padding:55px 6%}}
+</style>
 </head>
-
 <body>
-  <header>
-    <div class="brand">
-      ASOHERBS
-      <small>FERTILITY & WELLNESS HOME</small>
+<div class="topline">FREE DELIVERY WITHIN NIGERIA ON FALLOSURE KIT BUNDLES</div>
+<header>
+  <a class="logo" href="#home" style="text-decoration:none">ASOHERBS<small>FERTILITY &amp; WELLNESS HOME</small></a>
+  <nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+  <button class="cartbtn" onclick="openCart()">Cart (<span id="cartCount">0</span>)</button>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+  <div class="eyebrow">Bridging Traditional Wisdom and Modern Wellness</div>
+  <h1>Thoughtful herbal wellness, delivered to your door.</h1>
+  <p>Welcome to Asoherbs Fertility &amp; Wellness Home. Explore our products and place your order online with convenient nationwide delivery.</p>
+  <a class="btn" href="#shop">Shop Fallosure Kit</a>
+</div></section>
+<section class="wrap" id="shop">
+  <div class="sectionhead"><h2>Featured Product</h2><p>Explore the Asoherbs Fallosure Kit</p></div>
+  <article class="product">
+    <div class="productphoto"><img src="fallosure-kit.png" alt="Asoherbs Fallosure Kit product pack"></div>
+    <div class="details">
+      <span class="tag">ASOHERBS SIGNATURE KIT</span>
+      <h3>Fallosure Kit</h3>
+      <p>A five-pack herbal wellness programme presented by Asoherbs.</p>
+      <ul class="sellingpoints"><li>Complete five-pack kit</li><li>Clear bundle pricing</li><li>Free delivery within Nigeria on the bundles below</li></ul>
+      <label for="bundle">Choose your bundle</label>
+      <select id="bundle" onchange="updatePrice()">
+        <option value="1">1 Kit — ₦167,000</option>
+        <option value="2">2 Kits — ₦327,000</option>
+        <option value="3">3 Kits — ₦467,000</option>
+      </select>
+      <div class="price" id="price">₦167,000</div>
+      <p class="delivery">✓ FREE DELIVERY WITHIN NIGERIA</p>
+      <button class="btn" onclick="addToCart()">Add to Cart</button>
+      <p class="smallprint">Product information is for general information. Individual experiences may vary. This product is not a substitute for medical diagnosis or treatment.</p>
     </div>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#wellness">Wellness</a>
-      <a href="#shop">Shop</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <h1>Bridging Traditional Wisdom and Modern Wellness</h1>
-      <p>
-        Explore thoughtfully developed herbal wellness products
-        and personalised wellness support from Asoherbs.
-      </p>
-      <a class="button" href="#shop">Explore Our Products</a>
-      <a class="button secondary" href="#contact">Contact Us</a>
-    </section>
-
-    <section id="about">
-      <h2 class="section-title">Welcome to Asoherbs</h2>
-      <p class="intro">
-        Asoherbs Nutraceuticals Ltd is committed to combining
-        traditional herbal knowledge with modern approaches to
-        wellness through product development, education and
-        personalised support.
-      </p>
-    </section>
-
-    <section id="wellness">
-      <h2 class="section-title">Our Wellness Focus</h2>
-      <div class="features">
-        <div class="feature">
-          <h3>Women's Wellness</h3>
-          <p>Explore wellness resources and products designed with women's health in mind.</p>
-        </div>
-        <div class="feature">
-          <h3>Herbal Formulations</h3>
-          <p>Discover our range of thoughtfully developed herbal wellness products.</p>
-        </div>
-        <div class="feature">
-          <h3>Wellness Education</h3>
-          <p>Access helpful information to support informed wellness decisions.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="shop" id="shop">
-      <h2 class="section-title">Explore Our Products</h2>
-      <p>
-        Discover the Asoherbs product collection and find
-        information about our available wellness products.
-      </p>
-      <a class="button" href="https://wa.me/2349067894339">
-        Enquire About Products
-      </a>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="section-title">Get in Touch</h2>
-      <p>We are available to answer your product and wellness enquiries.</p>
-      <p><strong>Phone:</strong> 09067894339</p>
-      <p><strong>Email:</strong> asoherbs@gmail.com</p>
-      <a class="button" href="https://wa.me/2349067894339">
-        Chat with Asoherbs on WhatsApp
-      </a>
-    </section>
-  </main>
-
-  <footer>
-    <p><strong>ASOHERBS NUTRACEUTICALS LTD</strong></p>
-    <p>Bridging Traditional Wisdom and Modern Wellness</p>
-    <p>© 2026 Asoherbs. All rights reserved.</p>
-  </footer>
+  </article>
+</section>
+<section class="perks"><div class="wrap">
+  <div class="sectionhead"><h2>Shopping with Asoherbs</h2><p>A straightforward way to explore and order our products.</p></div>
+  <div class="perkgrid"><div class="perk"><h3>Convenient Ordering</h3><p>Select your bundle and add it to your shopping cart.</p></div><div class="perk"><h3>Free Nationwide Delivery</h3><p>Delivery is included in the displayed Fallosure Kit bundle prices.</p></div><div class="perk"><h3>Customer Support</h3><p>Contact our team if you need help with an order.</p></div></div>
+</div></section>
+<section class="wrap" id="reviews"><div class="sectionhead"><h2>Customer Reviews</h2><p>Read and share genuine shopping experiences.</p></div>
+  <div class="reviews">
+    <p class="reviewintro">We welcome feedback from customers who have purchased from Asoherbs.</p>
+    <div id="reviewList"><p class="empty">Customer reviews will appear here once the review service is connected.</p></div>
+    <form class="reviewform" id="reviewForm">
+      <h3 style="color:var(--green);margin-bottom:8px">Leave a review</h3>
+      <label for="reviewName">Your name</label><input id="reviewName" maxlength="60" required placeholder="Your name">
+      <label for="reviewRating">Your rating</label><select id="reviewRating"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★ — Very good</option><option value="3">★★★ — Good</option><option value="2">★★ — Fair</option><option value="1">★ — Poor</option></select>
+      <label for="reviewText">Your review</label><textarea id="reviewText" rows="4" maxlength="700" required placeholder="Share your shopping experience"></textarea>
+      <button class="btn" type="submit">Submit review</button>
+      <p class="reviewstatus" id="reviewStatus">Reviews will be stored and displayed after we connect the secure review database. This form is not yet accepting submissions.</p>
+    </form>
+  </div>
+</section>
+<section class="wrap contact" id="contact"><div class="sectionhead"><h2>Need Assistance?</h2><p>Our team is available for product and order enquiries.</p></div>
+  <a class="btn" href="https://wa.me/2349067894339" target="_blank" rel="noopener">Chat with Asoherbs on WhatsApp</a><p style="margin-top:14px">Email: asoherbs@gmail.com</p>
+</section>
+</main>
+<footer><h2>ASOHERBS FERTILITY &amp; WELLNESS HOME</h2><p>Bridging Traditional Wisdom and Modern Wellness.</p><p>© 2026 Asoherbs Nutraceuticals Ltd. All rights reserved.</p></footer>
+<div class="overlay" id="cartOverlay" onclick="if(event.target===this)closeCart()"><div class="panel">
+  <div class="panelhead"><h2>Your Shopping Cart</h2><button class="xbtn" onclick="closeCart()">Close</button></div>
+  <div id="cartItems" class="empty">Your cart is empty.</div><div class="total" id="cartTotal">Total: ₦0</div>
+  <button class="btn" style="width:100%" onclick="beginCheckout()">Proceed to checkout</button>
+  <p class="checkout-note">Secure Paystack checkout will be enabled after we connect the server-side payment service. No payment is taken on this preview.</p>
+</div></div>
+<script>
+const prices={1:167000,2:327000,3:467000};let cart=[];
+const naira=n=>"₦"+n.toLocaleString("en-NG");
+function updatePrice(){const q=Number(document.getElementById("bundle").value);document.getElementById("price").textContent=naira(prices[q]);}
+function addToCart(){const q=Number(document.getElementById("bundle").value);const found=cart.find(x=>x.quantity===q);if(found)found.count++;else cart.push({quantity:q,price:prices[q],count:1});renderCart();openCart();}
+function renderCart(){const count=cart.reduce((s,x)=>s+x.quantity*x.count,0);const total=cart.reduce((s,x)=>s+x.price*x.count,0);document.getElementById("cartCount").textContent=count;const el=document.getElementById("cartItems");if(!cart.length){el.className="empty";el.textContent="Your cart is empty.";}else{el.className="";el.innerHTML=cart.map((x,i)=>`<div class="cartrow"><span>${x.quantity} kit${x.quantity>1?"s":""} bundle × ${x.count}<br><small>Free nationwide delivery</small></span><strong>${naira(x.price*x.count)}</strong><button class="xbtn" onclick="removeItem(${i})">Remove</button></div>`).join("");}document.getElementById("cartTotal").textContent="Total: "+naira(total);}
+function removeItem(i){cart.splice(i,1);renderCart();}
+function openCart(){document.getElementById("cartOverlay").style.display="flex";}
+function closeCart(){document.getElementById("cartOverlay").style.display="none";}
+function beginCheckout(){alert("The cart is ready. We will connect secure Paystack checkout and order confirmation before accepting live orders.");}
+document.getElementById("reviewForm").addEventListener("submit",e=>{e.preventDefault();document.getElementById("reviewStatus").textContent="The review database is not connected yet, so your review has not been submitted. We will activate submissions after backend setup.";});
+</script>
 </body>
 </html>
